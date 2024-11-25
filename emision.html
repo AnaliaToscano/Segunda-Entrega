@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emitir Seguro - Seguro de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emite tu Seguro</h1>
+        <p>Completa el proceso para obtener tu póliza de seguro.</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cotizar.html">Cotizar</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="issue-section">
+        <img src="img/emision_auto.jpg" alt="Emisión de seguro de auto" class="section-image">
+        <form action="confirmacion.html" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="numero_poliza">Número de Póliza:</label>
+            <input type="text" id="numero_poliza" name="numero_poliza" required>
+
+            <button type="submit" class="button submit-button">Emitir Seguro</button>
+        </form>
+        <a href="index.html" class="button return-button">Volver al Menú Anterior</a>
+    </section>
+</body>
+</html>

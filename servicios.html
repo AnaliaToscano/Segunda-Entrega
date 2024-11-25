@@ -4,36 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Seguro de Autos</title>
+    <!-- Agregando Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-5">
         <h1>Nuestros Servicios</h1>
-        <p>Explora los servicios que ofrecemos para protegerte a ti y a tu vehículo.</p>
+        <p class="lead">Explora los servicios que ofrecemos para protegerte a ti y a tu vehículo.</p>
     </header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cotizar.html">Cotizar</a></li>
-            <li><a href="emision.html">Emitir Seguro</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Seguro de Autos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cotizar.html">Cotizar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emision.html">Emitir Seguro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="services-section">
-        <img src="img/servicios_auto.jpg" alt="Servicios de seguro de auto" class="section-image">
-        <div class="service-item">
-            <h2>Cobertura contra Daños</h2>
-            <p>Protección integral en caso de accidentes, robo y daños causados por terceros.</p>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/servicios_auto.jpg" class="card-img-top" alt="Cobertura contra daños">
+                    <div class="card-body">
+                        <h5 class="card-title">Cobertura contra Daños</h5>
+                        <p class="card-text">Protección integral en caso de accidentes, robo y daños causados por terceros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/servicios_auto.jpg" class="card-img-top" alt="Asistencia en carretera">
+                    <div class="card-body">
+                        <h5 class="card-title">Asistencia en Carretera</h5>
+                        <p class="card-text">Recibe ayuda inmediata en emergencias en la carretera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/servicios_auto.jpg" class="card-img-top" alt="Auto de reemplazo">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto de Reemplazo</h5>
+                        <p class="card-text">Usa un vehículo de reemplazo mientras el tuyo se repara.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="service-item">
-            <h2>Asistencia en Carretera</h2>
-            <p>Recibe ayuda inmediata en emergencias en la carretera.</p>
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-secondary">Volver al Menú Anterior</a>
         </div>
-        <div class="service-item">
-            <h2>Auto de Reemplazo</h2>
-            <p>Usa un vehículo de reemplazo mientras el tuyo se repara.</p>
-        </div>
-        <a href="index.html" class="button return-button">Volver al Menú Anterior</a>
     </section>
+    <!-- Agregando Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

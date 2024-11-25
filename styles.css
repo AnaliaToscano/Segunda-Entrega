@@ -201,3 +201,25 @@ button:hover {
 .hero-button:hover {
     background-color: #d35400;
 }
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 576px) {
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
+    .hero-text p {
+        font-size: 1em;
+    }
+    .navbar a {
+        font-size: 0.9em;
+    }
+}
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 768px) {
+    .section-image {
+        max-width: 90%;
+    }
+    .button {
+        font-size: 1em;
+    }
+}
